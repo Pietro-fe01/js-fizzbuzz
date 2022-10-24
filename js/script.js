@@ -12,35 +12,33 @@ stringa corretta da mostrare.*/
 a seconda che il valore inserito sia un numero, un fizz, 
 un buzz o un fizzbuzz. */
 
+/* -------------------------- */
 
+// Associo con una variabile al container in cui andranno inseriti i numeri
 const fizzBuzzContainer = document.querySelector(".fizzbuzz-container");
 let fizzBuzzItem;
 
 for(let i = 1; i<=100; i++){
+    // per ogni ciclo i, creo un div
+    fizzBuzzItem = document.createElement("div");
+    // Al div gli assegno una classe "standard"
+    fizzBuzzItem.classList.add("fizzbuzz-item");
+
     if ( i % 3 === 0 && i % 5 === 0 ){
-        fizzBuzzItem = document.createElement("div");
-        fizzBuzzItem.classList.add("fizzbuzz-item", "fizzbuzz-bk-color");
+        fizzBuzzItem.classList.add("fizzbuzz-bk-color");
         fizzBuzzItem.innerHTML = "FizzBuzz";
-        fizzBuzzContainer.append(fizzBuzzItem);
     } else if ( i % 3 === 0){
-        fizzBuzzItem = document.createElement("div");
-        fizzBuzzItem.classList.add("fizzbuzz-item", "fizz-bk-color");
+        fizzBuzzItem.classList.add("fizz-bk-color");
         fizzBuzzItem.innerHTML = "Fizz";
-        fizzBuzzContainer.append(fizzBuzzItem);
     } else if ( i % 5 === 0){
-        fizzBuzzItem = document.createElement("div");
-        fizzBuzzItem.classList.add("fizzbuzz-item", "buzz-bk-color");
+        fizzBuzzItem.classList.add("buzz-bk-color");
         fizzBuzzItem.innerHTML = "Buzz";
-        fizzBuzzContainer.append(fizzBuzzItem);
     } else {
-        fizzBuzzItem = document.createElement("div");
-        fizzBuzzItem.classList.add("fizzbuzz-item", "blue-bk-color");
+        fizzBuzzItem.classList.add("blue-bk-color");
         fizzBuzzItem.innerHTML = i;
-        fizzBuzzContainer.append(fizzBuzzItem);
     }
+    fizzBuzzContainer.append(fizzBuzzItem);
 }
-
-
 
 // POST IT CUSTOMIZED
 $(document).ready(function () {

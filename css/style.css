@@ -40,7 +40,7 @@ h1{
 }
 
 .fizzbuzz-item{
-    width: calc(100% / 7 - 20px);
+    width: calc(100% / 7 - 1.25rem);
     height: 3.125rem;
     display: flex;
     justify-content: center;
