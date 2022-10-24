@@ -32,18 +32,36 @@ h1{
 /*--------------
     MAIN
 ---------------*/
-.fizzbuzz-body{
+.fizzbuzz-container{
     width: 100%;
-    height: 31.25rem;
-    background-color: green;
-    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .fizzbuzz-item{
-    width: 6.25rem;
-    height: 6.25rem;
-    background-color: red;
+    width: calc(100% / 7 - 20px);
+    height: 3.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: .625rem;
+}
+
+/*--------------
+    BK COLORS
+---------------*/
+.blue-bk-color{
+    background-color: #1389b2;
+}
+
+.fizz-bk-color{
+    background-color: #0cd6a1;
+}
+
+.buzz-bk-color{
+    background-color: #ffd166;
+}
+
+.fizzbuzz-bk-color{
+    background-color: #f0466f;
 }
