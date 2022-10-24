@@ -1,0 +1,49 @@
+/*--------------
+    RESET
+---------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------
+    TYPOGRAPHY
+---------------*/
+body{
+    background-color: #083b4c;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.1875rem;
+}
+
+/*--------------
+    COMMON
+---------------*/
+.container {
+    width: 50rem;
+    margin: auto;
+}
+
+/*--------------
+    MAIN
+---------------*/
+.fizzbuzz-body{
+    width: 100%;
+    height: 31.25rem;
+    background-color: green;
+    border: 1px solid;
+}
+
+.fizzbuzz-item{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
