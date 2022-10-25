@@ -1,3 +1,4 @@
+"use strict";
 /* Consegna:
 Scrivi un programma che stampi in console i numeri da 1 a 100, 
 ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i 
@@ -14,7 +15,7 @@ un buzz o un fizzbuzz. */
 
 /* -------------------------- */
 
-// Associo con una variabile al container in cui andranno inseriti i numeri
+// Associo con una variabile il container in cui andranno inseriti i numeri
 const fizzBuzzContainer = document.querySelector(".fizzbuzz-container");
 let fizzBuzzItem;
 
@@ -25,16 +26,16 @@ for(let i = 1; i<=100; i++){
     fizzBuzzItem.classList.add("fizzbuzz-item");
 
     if ( i % 3 === 0 && i % 5 === 0 ){
-        fizzBuzzItem.classList.add("fizzbuzz-bk-color");
+        fizzBuzzItem.classList.add("fizzbuzz-bg-color");
         fizzBuzzItem.innerHTML = "FizzBuzz";
     } else if ( i % 3 === 0){
-        fizzBuzzItem.classList.add("fizz-bk-color");
+        fizzBuzzItem.classList.add("fizz-bg-color");
         fizzBuzzItem.innerHTML = "Fizz";
     } else if ( i % 5 === 0){
-        fizzBuzzItem.classList.add("buzz-bk-color");
+        fizzBuzzItem.classList.add("buzz-bg-color");
         fizzBuzzItem.innerHTML = "Buzz";
     } else {
-        fizzBuzzItem.classList.add("blue-bk-color");
+        fizzBuzzItem.classList.add("blue-bg-color");
         fizzBuzzItem.innerHTML = i;
     }
     fizzBuzzContainer.append(fizzBuzzItem);

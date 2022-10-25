@@ -26,7 +26,7 @@ h1{
     COMMON
 ---------------*/
 .container {
-    width: 46.875rem;
+    max-width: 46.875rem;
     margin: auto;
 }
 
@@ -34,9 +34,9 @@ h1{
     MAIN
 ---------------*/
 .fizzbuzz-container{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .fizzbuzz-item{
@@ -51,19 +51,19 @@ h1{
 /*--------------
     BK COLORS
 ---------------*/
-.blue-bk-color{
+.blue-bg-color{
     background-color: #1389b2;
 }
 
-.fizz-bk-color{
+.fizz-bg-color{
     background-color: #0cd6a1;
 }
 
-.buzz-bk-color{
+.buzz-bg-color{
     background-color: #ffd166;
 }
 
-.fizzbuzz-bk-color{
+.fizzbuzz-bg-color{
     background-color: #f0466f;
 }
 
